@@ -1,0 +1,114 @@
+.jumbotron {
+    background-color: #555;
+    font-color: white;
+    text-align: center;
+}
+    body {
+    color: white;
+    background-image: url("../images/newbackground.jpg");
+    background-size: cover;
+    font-family: Chalkboard, ‘Comic Sans’, sans-serif;
+}
+
+h1, h3 {
+    font-family: 'Merienda';
+}
+
+.btn-success {
+    margin-left: 40px;
+}
+
+#div1 {
+    border: 3px solid green;
+    font-size: 40px;
+    text-align: center;
+    margin: 15px auto;
+    padding: 10px auto;
+    height: 120px;
+    width: 60%;
+}
+
+#div2 {
+    border: 3px solid green;
+    font-size: 30px;
+    text-align: left;
+    margin: 15px auto;
+    padding: 10px auto;
+    height: 100px;
+    width: 30%;
+}
+
+#div3 {
+    border: 3px solid green;
+    font-size: 30px;
+    text-align: center;
+    margin: 15px auto;
+    padding: 10px auto;
+    height: 100px;
+    width: 30%;
+}
+
+#center-section {
+    margin-left: 320px;
+}
+
+
+#div4 {
+    border: 3px solid green;
+    font-size: 30px;
+    text-align: center;
+    margin: 15px auto;
+    padding: 10px auto;
+    height: 80px;
+    width: 60%;
+    margin-bottom: 40px;
+}
+
+@media screen and (max-width: 640px) {
+#div1 {
+    width: 65%;
+}
+
+    #div2 {
+    float: left;
+    width: 60%;
+    margin-left: -130px;
+    text-align: left;
+}
+#div3 {
+    float: left;
+    width: 45%;
+}
+#div4 {
+    width: 65%;
+    font-size: 30px;
+    height: 90px;
+}
+}
+
+@media screen and (max-width: 780px) {
+    #div2 {
+        float: left;
+        margin-left: -100px;
+        text-align: left;
+}
+
+#div3 {
+    float: left;
+}
+
+#div4 {
+    font-size: 30px;
+    text-align: left;
+    height: 90px;
+}
+    }
+
+@media screen and (max-width: 980px) {
+    #div2{
+        float: left;
+    }
+}
+
+
+
