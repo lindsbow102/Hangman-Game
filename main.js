@@ -12,13 +12,13 @@ var maxGuesses = 15;
 function takeAGuess(){
 	console.log(myWord.toString());
 	if (myWord.guessesMade.length >= maxGuesses){
-		console.log('You have no more guesses. WOMP WOMP.');
+		console.log('You have run out of guesses! Better luck next time.');
 	return; //Game over
 	}
 	inquirer.prompt([{
 		name: 'letter',
 		type: 'text',
-		message: 'Enter a letter:',
+		message: 'Guess a letter:',
 		validate: function(str){
 //			if (str.length != 1) return false;
 			var regEx = new RegExp("^[a-zA-Z\s]{1,1}$");
@@ -28,7 +28,7 @@ function takeAGuess(){
 				var letter = letterInput.letter; 
 				myWord.findLetter(letter); //Check
 					if(myWord.isComplete()){ 
-					console.log('Yes! It was ' + myWord.toString() + '!');
+					console.log('Sweet--you guessed it! It was ' + myWord.toString() + '!');
 					return; //Winner
 					}
 				console.log('-------------------\n'); //If we are here the game did not end. Next guess.
